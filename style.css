@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ccd3df;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin: 5px 5px 0 10px;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.boton-start-game{
+    margin-right: 3em;
+    padding: 1.5em 3em 1.5em 3em;
+    background-color: #284268;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    
+}
+
+.boton-start-game:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    color: #284268;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #284268;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.0);
+}
+
+.boton-agg{
+    padding: 1.4em 2em 1.4em 2em;
+    background-color: transparent;
+    border-color: #284268;
+    border-style: solid;
+    border-radius: 12px;
+    color:#284268;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton-agg:hover{
+    transition: 0.5s;
+    padding: 1.5em 2em 1.5em 2em;
+    background-color: #284268;
+    font-weight: normal;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px 1px black;
+    transform: scale(1.1);
+}
+
+.botones{
+    width: 445px;
+    margin: 4em auto;
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    width: 100%;
+    bottom: 0;
+    background-color:#284268;
+    padding: 1.8em;
+}
+
+footer p{
+    color: white;
+    
+}
+
+/* Estilos a la pagina del juego */
+
+.invisible{
+    display: inline;
+}
+
+.alerta-win-loser{
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    background-color:#284268;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    box-shadow: 1px 2px 5px 1px #24242452;
+    width: 15em;
+    height: 8em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.alerta-win-loser > p{
+    padding: 10px 0;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alerta-win-loser img{
+    width: 30px;
+}
+
+.contenedor-game{
+    display: flex;
+}
+
+.contenedor-canvas{
+    width: 500px ;
+    margin: 0 2em 1em 30%;
+}
+
+.botones-pag2{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.boton-new-game{
+    padding: 1.5em 3em 1.5em 3em;
+    background-color: #284268;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+.boton-new-game:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    color: #284268;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #284268;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.0);
+}
+
+.boton-loser{
+    margin-top: 2em;
+    padding: 1.4em 3.6em 1.4em 3.6em;
+    background-color: transparent;
+    border-color: #284268;
+    border-style: solid;
+    border-radius: 12px;
+    color:#284268;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton-loser:hover{
+    transition: 0.5s;
+    background-color: #284268;
+    font-weight: normal;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px 1px black;
+    transform: scale(1.1);
+}
+
+#canvas{
+    background-color: #ccd3df;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+@media (max-width:1049px) {
+    .contenedor-game{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-canvas{
+        margin: 0 auto;
+    }
+
+    .botones-pag2{
+        margin:3em auto;
+    }
+
+    
+}
+
+
+/* Estilos de la pagina del ingreso de palabra nueva*/
+
+.aviso{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+.texto-aviso{
+    padding: 1em;
+    font-family: arial;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: rgb(184, 39, 39);
+}
+
+.texto-aviso span{
+    color: rgb(184, 39, 39);
+}
+.contenedor-input{
+    width: 80%;
+    max-width: 560px;
+    height: 260px;
+    margin: 1em auto;
+}
+
+.input-texto{
+text-transform: uppercase;
+padding: 0 8em;
+height: 100%;
+border-radius: 12px;
+outline: none;
+border: none;
+box-shadow: 1px 2px 5px 1px #24242452;
+font-size: 20px;
+}
+
+::-webkit-input-placeholder{
+    text-transform: none;
+}
+
+.botones-pag3{
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-save{
+    margin-right: 4em;
+    padding: 1.5em 2em 1.5em 2em;
+    background-color: #284268;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+.boton-save:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    color: #284268;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #284268;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.0);
+}
+
+.boton-cancelar{
+    padding: 1.4em 3.6em 1.4em 3.6em;
+    background-color: transparent;
+    border-color: #284268;
+    border-style: solid;
+    border-radius: 12px;
+    color:#284268;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton-cancelar:hover{
+    transition: 0.5s;
+    background-color: #284268;
+    font-weight: normal;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px 1px black;
+    transform: scale(1.1);
+}

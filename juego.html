@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <Header>
+            <img src="img/Vector.png" alt="">
+            <h1>Juego del Ahorcado</h1>
+        </Header>
+        <div class="titulo">
+            <img src="img/Adivina__1_-removebg-preview.png" alt="">
+        </div>
+        
+        <div style="display: none ;"  id="alerta-win" class="alerta-win-loser">
+            <p> ¡Felicidades!</p>
+            <p>¡Salvaste al pequeño Pitt!</p>
+            <img src="img/emoji-removebg-preview.png" alt="">
+        </div>
+
+        <div style="display: none ;" id="alerta-loser" class="alerta-win-loser">
+            <p class="texto-loser">¡Perdiste!</p>
+            <p class="texto-loser">¡Vuelve a intentarlo!</p>
+        </div>
+
+        <div class="contenedor-game">
+            <div class="contenedor-canvas">
+                <canvas id="canvas" width="500px" height="590px"></canvas>
+            </div>
+            <div class="botones-pag2">
+                <a href=""><button class="boton-new-game">Nuevo Juego</button></a>  
+                <a href="index.html"><button class="boton-loser">Rendirse</button></a>   
+            </div>
+        </div>
+        
+    </main>
+    <script src="/js/script.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/adicionar-muñeco.js"></script>
+    
+</body>
+</html>
