@@ -1,0 +1,52 @@
+@media (max-width: 430px){
+    .botones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        
+    }
+
+    .boton-start-game{
+        margin: 0;
+    }
+
+    .titulo{
+        width: 100%;
+    }
+
+    .titulo img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 645px) {
+    .contenedor-input{
+        width: 100%;
+    }
+
+    .input-texto{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 495px){
+    .botones-pag3{
+        flex-direction: column;
+        gap: 1em
+    }
+
+    .boton-save{
+        margin: 0;
+    }
+
+    .boton-cancelar{
+        width: 100%;
+    }
+}
